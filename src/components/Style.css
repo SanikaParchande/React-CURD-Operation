@@ -1,0 +1,331 @@
+.login-container {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .login-box {
+            width: 750px;
+            height: 700px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 12px rgba(0, 0, 0, 0.6);
+            display: flex;
+            overflow: hidden;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1.5em;
+        }
+        
+        .login-box .gradient {
+            width: 50%;
+            height: 100%;
+            background: linear-gradient(120deg, green, limegreen);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .login-box .gradient h2 {
+            font-size: 35px;
+            text-align: center;
+            color: white;
+        }
+        
+        .login-box form {
+            width: 50%;
+            height: 100%;
+            padding: 20px 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: start;
+            gap: 1em;
+        }
+        
+        .login-box form i {
+            font-size: 45px;
+            background: linear-gradient(120deg, green, limegreen);
+            color: transparent;
+            background-clip: text;
+            margin-top: 5px;
+        }
+        
+        .input-field {
+            width: 100%;
+        }
+        
+        .input-field label {
+            font-size: 15px;
+            font-weight: 520;
+            color: #444;
+            transition: all 0.3s ease-in;
+        }
+        
+        .input-with-icon {
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            gap: 1em;
+            padding: 8px;
+        }
+        
+        .input-with-icon i {
+            font-size: 25px;
+            color: #444;
+        }
+        
+        .input-with-icon input {
+            width: 90%;
+            border: none;
+            outline: none;
+            font-size: 16px;
+            color: #444;
+        }
+        
+        .input-field:focus-within label {
+            color: green;
+        }
+        
+        .input-with-icon:focus-within {
+            border: 2px solid green;
+            box-shadow: 0 0 8px rgb(58, 128, 0);
+        }
+        
+        .input-with-icon:focus-within i {
+            background: linear-gradient(120deg, green, limegreen);
+            color: transparent;
+            background-clip: text;
+        }
+        
+        form button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 15px;
+            background: linear-gradient(120deg, green, limegreen);
+            color: white;
+            font-size: 18px;
+            font-weight: 520;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease-in;
+            box-shadow: 0 0 12px #444;
+        }
+        
+        form button:hover {
+            background: linear-gradient(120deg, limegreen, green);
+            transform: scale(0.95);
+        }
+        
+        form a {
+            color: green;
+            text-decoration: none;
+        }
+        
+        .dashboard-container {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: gray;
+            padding: 20px;
+            gap: 2em;
+        }
+        
+        .dashboard-container .menu {
+            width: 25%;
+            height: 100vh;
+            background-color: white;
+            padding: 20px;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: start;
+        }
+        
+        .dashboard-container .menu button {
+            width: 100%;
+            padding: 10px;
+            cursor: pointer;
+            border: none;
+            border-radius: 4px;
+            background-color: transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 0.3s;
+        }
+        
+        .dashboard-container .menu button:hover {
+            background-color: #f0f0f0;
+        }
+        
+        .dashboard-container .menu .active {
+            background-color: black;
+            color: white;
+        }
+        
+        .dashboard-container .outlet-container {
+            width: 85%;
+            height: 100%;
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .title {
+            width: 100%;
+            height: 70px;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            background-color: gray;
+        }
+        
+        .title h2 {
+            font-size: 18px;
+            color: white;
+        }
+        
+        .user-form {
+            width: 100%;
+            padding: 20px 30px;
+        }
+        
+        .user-form .input-group {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2em;
+            padding: 9px;
+        }
+        
+        .input-group .input-field {
+            width: 30%;
+            min-width: 250px;
+        }
+        
+        .input-group .input-field label {
+            font-size: 13px;
+            font-weight: 520;
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        .input-group .input-field input,
+        .input-group .input-field select,
+        .input-group .input-field textarea {
+            width: 100%;
+            padding: 9px;
+            margin: 5px 0;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            outline: none;
+            transition: border-color 0.3s ease;
+        }
+        
+        .input-group .input-field input:focus,
+        .input-group .input-field select:focus {
+            border-color: #333;
+        }
+        
+        .input-group .input-field .error {
+            color: red;
+            font-weight: 520;
+        }
+        
+        .action-group {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1em;
+            margin-top: 40px;
+        }
+        
+        .action-group button {
+            width: 45%;
+            padding: 10px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 4px;
+            border: none;
+            color: white;
+            transition: all 0.3s ease;
+        }
+        
+        .action-group button[type="submit"] {
+            background-color: green;
+        }
+        
+        .action-group button[type="reset"] {
+            background-color: red;
+        }
+        
+        .action-group button:hover {
+            opacity: 0.85;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 15px;
+            text-align: left;
+        }
+        
+        th,
+        td {
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+        
+        table tbody tr td .btn-delete {
+            padding: 20px;
+            background-color: crimson;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            outline: none;
+            transition: all ease-in 0.25s;
+            border: 1px solid crimson;
+        }
+        
+        table tbody tr td .btn-delete:hover {
+            background-color: rgb(117, 5, 28);
+        }
+        
+        table tbody tr td .btn-update:hover {
+            background-color: rgb(117, 5, 28);
+        }
+
+         table tbody tr td .btn-update {
+            padding: 20px;
+            background-color: green;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            outline: none;
+            transition: all ease-in 0.25s;
+            border: 1px solid crimson;
+        }
+        
+        table tbody tr td .btn-update:hover {
+            background-color: green;
+        }
+        
+        table tbody tr td .btn-update:hover {
+            background-color: rgb(117, 5, 28);
+        }
